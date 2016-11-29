@@ -1,9 +1,16 @@
-import React from 'react';
+import React from "react"
+
+const Thread = (props) => {
+  return (
+    <h1>Hello, this is a forum with {props.numThreads} of Threads!!!</h1>
+  )
+}
+
+export default Thread;
 
 class Thread extends
 
- React.Component {
-
+React.Component {
 
   render() {
     return (
