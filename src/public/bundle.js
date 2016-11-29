@@ -22104,13 +22104,11 @@
   \**********************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
 	var _react = __webpack_require__(/*! react */ 178);
 	
@@ -22118,54 +22116,33 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Thread = function (_React$Component) {
-	  _inherits(Thread, _React$Component);
-	
-	  function Thread() {
-	    _classCallCheck(this, Thread);
-	
-	    return _possibleConstructorReturn(this, (Thread.__proto__ || Object.getPrototypeOf(Thread)).apply(this, arguments));
-	  }
-	
-	  _createClass(Thread, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'button',
-	          { value: this.props.index, onClick: this.props.onUpvote },
-	          'Upvote'
-	        ),
-	        _react2.default.createElement(
-	          'button',
-	          { value: this.props.index, onClick: this.props.onDownvote },
-	          'Downvote'
-	        ),
-	        _react2.default.createElement('br', null),
-	        'Title: ',
-	        this.props.title,
-	        ' Upvotes: ',
-	        this.props.upvotes,
-	        _react2.default.createElement('br', null),
-	        _react2.default.createElement(
-	          'button',
-	          { value: this.props.value, onClick: this.props.onDestroy },
-	          'Delete'
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return Thread;
-	}(_react2.default.Component);
+	var Thread = function Thread(props) {
+	  return _react2.default.createElement(
+	    "li",
+	    null,
+	    _react2.default.createElement(
+	      "button",
+	      { value: props.index, onClick: props.onUpvote },
+	      "Upvote"
+	    ),
+	    _react2.default.createElement(
+	      "button",
+	      { value: props.index, onClick: props.onDownvote },
+	      "Downvote"
+	    ),
+	    _react2.default.createElement("br", null),
+	    "Title: ",
+	    props.title,
+	    " Upvotes: ",
+	    props.upvotes,
+	    _react2.default.createElement("br", null),
+	    _react2.default.createElement(
+	      "button",
+	      { value: props.value, onClick: props.onDestroy },
+	      "Delete"
+	    )
+	  );
+	};
 	
 	exports.default = Thread;
 
